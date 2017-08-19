@@ -12,6 +12,7 @@ const routes: Routes = [
             { path: 'lists', loadChildren: './lists/lists.module#ListsModule' },
             { path: 'contacts', loadChildren: './contacts/contacts.module#ContactsModule' },
             { path: 'campstats', loadChildren: './campstats/campstats.module#CampStatsModule' },
+            { path: 'camps', loadChildren: './camps/camps.module#CampsModule' },
             { path: 'settings', loadChildren: './settings/settings.module#SettingsModule' },
             { path: 'tables', loadChildren: './tables/tables.module#TablesModule' },
             { path: 'forms', loadChildren: './form/form.module#FormModule' },

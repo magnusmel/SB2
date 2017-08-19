@@ -4,6 +4,8 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { PageHeaderModule } from './../../shared';
 import { CampaignsComponent } from './campaigns.component';
 
+
+
 describe('CampaignsComponent', () => {
   let component: CampaignsComponent;
   let fixture: ComponentFixture<CampaignsComponent>;
@@ -14,7 +16,11 @@ describe('CampaignsComponent', () => {
       RouterTestingModule,
       PageHeaderModule,
     ],
-      declarations: [ CampaignsComponent ]
+      declarations: [
+        CampaignsComponent,
+       
+       
+      ]
     })
     .compileComponents();
   }));
