@@ -1,6 +1,4 @@
-TMAIL Version 2.x
-
-# SB Admin rewritten in Angular4 and Bootstrap 4
+#TMAIL Version 2.x - written in Angular4 and Bootstrap 4
 Simple Dashboard Admin App built using Angular 4 and Bootstrap 4
 
 
