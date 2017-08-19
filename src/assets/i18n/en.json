@@ -1,8 +1,13 @@
 {
     "dashboard": "Dashboard",
+    "campaigns": "Campaigns",
+    "lists": "Lists",
+    "contacts": "Contacts",
+    "stats": "Statistics",
     "charts": "Charts",
     "tables": "Tables",
     "forms": "Forms",
+    "settings": "Settings",
     "boostrapElement": "Boostrap Element",
     "boostrapGrid": "Boostrap Grid",
     "component": "Component",

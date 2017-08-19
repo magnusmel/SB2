@@ -8,6 +8,11 @@ const routes: Routes = [
         children: [
             { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule' },
             { path: 'charts', loadChildren: './charts/charts.module#ChartsModule' },
+            { path: 'campaigns', loadChildren: './campaigns/campaigns.module#CampaignsModule' },
+            { path: 'lists', loadChildren: './lists/lists.module#ListsModule' },
+            { path: 'contacts', loadChildren: './contacts/contacts.module#ContactsModule' },
+            { path: 'campstats', loadChildren: './campstats/campstats.module#CampStatsModule' },
+            { path: 'settings', loadChildren: './settings/settings.module#SettingsModule' },
             { path: 'tables', loadChildren: './tables/tables.module#TablesModule' },
             { path: 'forms', loadChildren: './form/form.module#FormModule' },
             { path: 'bs-element', loadChildren: './bs-element/bs-element.module#BsElementModule' },
@@ -17,6 +22,7 @@ const routes: Routes = [
         ]
     }
 ];
+
 
 @NgModule({
     imports: [RouterModule.forChild(routes)],

@@ -6,7 +6,13 @@ Simple Dashboard Admin App built using Angular 4 and Bootstrap 4
  - Added Firebase Tools
  - Added Logo
  - Added Login Logo
+ - Added Campaigns Page
+ - Added Lists Page
+ - Added Stats Page
+ - Added Settings Page
 
+
+ - Updated II8n dictionary
 
 Powered by [StartAngular](http://startangular.com/) & [StrapUI](http://strapui.com/)
 
