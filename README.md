@@ -1,9 +1,12 @@
 # TMAIL Version 2.x - written in Angular4 and Bootstrap 4
 Simple Dashboard Admin App built using Angular 4 and Bootstrap 4
 
+#Version 2.0.3
+ - Updated Lists with UI components
+
 #Version 2.0.2
  - Added Tab window to campaigns
- 
+
 
 
 #Version 2.0.1
