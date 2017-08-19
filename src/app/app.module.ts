@@ -8,6 +8,20 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthGuard } from './shared';
+
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+
+export const firebaseConfig = {
+    apiKey: "AIzaSyAvVAniCCXMlbXqiHBXeOd_VfLka_qNIQQ",
+    authDomain: "tiemail-c710e.firebaseapp.com",
+    databaseURL: "https://tiemail-c710e.firebaseio.com",
+    projectId: "tiemail-c710e",
+    storageBucket: "tiemail-c710e.appspot.com",
+    messagingSenderId: "1026118489472"
+};
+
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: Http) {
     // for development
@@ -20,6 +34,9 @@ export function HttpLoaderFactory(http: Http) {
     ],
     imports: [
         BrowserModule,
+        AngularFireModule.initializeApp(firebaseConfig),
+        AngularFireDatabaseModule,
+        AngularFireAuthModule,
         BrowserAnimationsModule,
         FormsModule,
         HttpModule,
