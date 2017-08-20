@@ -4,6 +4,7 @@ import {
     NgbCarouselModule,
     NgbAlertModule
 } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 import { DashboardRoutingModule } from './dashboard-routing.module';
@@ -11,7 +12,8 @@ import { DashboardComponent } from './dashboard.component';
 import {
     TimelineComponent,
     NotificationComponent,
-    ChatComponent
+    ChatComponent,
+    ModalComponent
 } from './components';
 import { StatModule } from '../../shared';
 
@@ -25,6 +27,7 @@ import { StatModule } from '../../shared';
     ],
     declarations: [
         DashboardComponent,
+        ModalComponent,
         TimelineComponent,
         NotificationComponent,
         ChatComponent

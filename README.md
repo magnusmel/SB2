@@ -3,6 +3,7 @@ Simple Dashboard Admin App built using Angular 4 and Bootstrap 4
 
 #Version 2.0.3
  - Updated Lists with UI components
+ - Updated Dashboard with  Timeline style
 
 #Version 2.0.2
  - Added Tab window to campaigns

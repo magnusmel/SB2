@@ -4,8 +4,10 @@ import { NgbCarouselModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
 import {
   TimelineComponent,
   NotificationComponent,
-  ChatComponent
+  ChatComponent,
+  ModalComponent
 } from './components';
+
 import { StatModule } from '../../shared';
 import { DashboardComponent } from './dashboard.component';
 
@@ -22,6 +24,7 @@ describe('DashboardComponent', () => {
     ],
       declarations: [
         DashboardComponent,
+        ModalComponent,
         TimelineComponent,
         NotificationComponent,
         ChatComponent
