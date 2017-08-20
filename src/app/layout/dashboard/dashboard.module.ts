@@ -17,6 +17,9 @@ import {
 } from './components';
 import { StatModule } from '../../shared';
 
+import { CampaignDataService } from './campaigndata.service';
+
+
 @NgModule({
     imports: [
         CommonModule,
@@ -25,6 +28,9 @@ import { StatModule } from '../../shared';
         DashboardRoutingModule,
         StatModule,
     ],
+    
+    providers: [CampaignDataService],
+
     declarations: [
         DashboardComponent,
         ModalComponent,
