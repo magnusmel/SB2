@@ -1,6 +1,6 @@
 <div class="card-block">
     <ul class="timeline">
-        <li *ngFor="let camp of campData">
+        <li *ngFor="let camp of campData; let i = index"   [ngClass]="{'timeline-inverted': (i % 2) == 1 }" >
             <div class="timeline-badge info"><i class="fa fa-check"></i>
             </div>
             <div class="timeline-panel">
