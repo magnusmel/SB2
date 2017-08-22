@@ -2,6 +2,32 @@
     <app-page-header [heading]="'Contacts'" [icon]="'fa-table'"></app-page-header>
     <div class="row">
         <div class="col col-xl-6 col-lg-12">
+
+       <div class="card mb-3">
+                <div class="card-header">Contact Details</div>
+                <table class="card-block table table-hover">
+                    <thead class="thead-inverse">
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email ID</th>
+                    </tr>
+                    </thead>
+                    <tbody *ngFor="let contact of contactData;">
+                    <tr>
+                        <th scope="row">{{contact.id}}</th>
+                        <td>{{contact.fname}}</td>
+                        <td>{{contact.lname}}</td>
+                        <td>{{contact.email}}</td>
+                    </tr>
+                   
+                    </tbody>
+                </table>
+            </div>
+
+
+     <!--    
             <div class="card mb-3">
                 <div class="card-header">
                     Basic example
@@ -103,8 +129,8 @@
                         </tbody>
                     </table>
                 </div>
-            </div>
-            <div class="card mb-3">
+            </div> -->
+            <!-- <div class="card mb-3">
                 <div class="card-header">Bordered table</div>
                 <div class="card-block table-responsive">
                     <table class="table table-bordered">
@@ -175,10 +201,10 @@
                     </tr>
                     </tbody>
                 </table>
-            </div>
+            </div> -->
         </div>
         <div class="col col-xl-6 col-lg-12">
-            <div class="card mb-3">
+            <!-- <div class="card mb-3">
                 <div class="card-header">Inverse table</div>
                 <div class="card-block table-responsive">
                     <table class="table table-inverse">
@@ -217,7 +243,7 @@
                 <div class="card-header">Striped Rows</div>
                 <div class="card-block table-responsive">
                     <table class="table table-hover table-striped">
-                        <thead>
+                        <thead >
                         <tr>
                             <th>Page</th>
                             <th>Visits</th>
@@ -271,80 +297,46 @@
                         </tbody>
                     </table>
                 </div>
-            </div>
+            </div> -->
+
+     
             <div class="card mb-3">
-                <div class="card-header">Hoverable rows</div>
-                <table class="card-block table table-hover">
-                    <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Username</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="card mb-3">
-                <div class="card-header">Contextual classes</div>
+                <div class="card-header">Contact Activity Details</div>
                 <table class="card-block table">
                     <thead>
                     <tr>
                         <th>#</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Username</th>
+                        <th>Sent Date</th>
+                        <th>Subject</th>
+                        <th>Open Date</th>
+
                     </tr>
                     </thead>
                     <tbody>
                     <tr class="table-active">
                         <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
+                  <td>16 Aug 2017, <small>9.30AM</small></td>
+                        <td>Todays Mailer</td>
+                        <td>18 Aug 2017, <small>9.30AM</small></td>
                     </tr>
                     <tr class="table-success">
                         <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
+                        <td>16 Aug 2017, <small>9.30AM</small></td>
+                        <td>Startup Gatherings</td>
+                        <td>18 Aug 2017, <small>9.30AM</small></td>
                     </tr>
-                    <tr class="table-info">
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
+                   
                     <tr class="table-warning">
                         <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
+                        <td>11 Aug 2017, <small>11.30AM</small></td>
+                        <td>Work a lot </td>
+                        <td>18 Aug 2017, <small>9.30AM</small></td>
                     </tr>
                     <tr class="table-danger">
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
+                        <th scope="row">4</th>
+                        <td>15 Aug 2017, <small>1.30PM</small></td>
+                        <td>Work a lot </td>
+                        <td>16 Aug 2017, <small>9.30AM</small></td>
                     </tr>
                     </tbody>
                 </table>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { routerTransition } from '../../router.animations';
+import { ContactDataService } from './contactdata.service';
 
 @Component({
     selector: 'app-contacts',
@@ -8,6 +9,16 @@ import { routerTransition } from '../../router.animations';
     animations: [routerTransition()]
 })
 export class ContactsComponent implements OnInit {
-    constructor() { }
+	
+	contactData;
+
+
+	constructor(service: ContactDataService) {
+		this.contactData = service.getContactData();
+
+
+
+	}
+
     ngOnInit() { }
 }

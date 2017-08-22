@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ContactsComponent } from './contacts.component';
 import { ContactsRoutingModule } from './contacts-routing.module';
 import { PageHeaderModule } from './../../shared';
+import { ContactDataService } from './contactdata.service';
 
 @NgModule({
     imports: [
@@ -11,6 +12,9 @@ import { PageHeaderModule } from './../../shared';
         ContactsRoutingModule,
         PageHeaderModule
     ],
+
+	providers: [ContactDataService],
+	
     declarations: [ContactsComponent]
 })
 export class ContactsModule { }

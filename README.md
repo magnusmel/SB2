@@ -2,8 +2,7 @@
 Simple Dashboard Admin App built using Angular 4 and Bootstrap 4
 
 #Version 2.0.7
- - Added a service to return List Data - List Page
-
+ - Added a service to return Contacts Data - Contacts Page
 
 #Version 2.0.6
  - Added a service to return List Data - List Page
