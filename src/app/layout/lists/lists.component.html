@@ -51,30 +51,17 @@
                             <th>Actions</th>
                         </tr>
                         </thead>
-                        <tbody>
+
+<!--                         *ngFor="let camp of campSentData;"  
+ -->                        <tbody *ngFor="let list of listData; let i = index">
                         <tr>
-                            <th scope="row">1</th>
-                            <td>List A</td>
-                            <td>3226</td>
+                            <th scope="row">{{i + 1}}</th>
+                            <td>{{list.list}}</td>
+                            <td>{{list.contacts}}</td>
                             <td>     
                             </td>
                         </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>List B</td>
-                            <td>4332</td>
-                            <td>
-                               
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>List C</td>
-                            <td>776</td>
-                            <td>
-                                  
-                            </td>
-                        </tr>
+                        
                         </tbody>
                     </table>
                    <!--  <table class="table">

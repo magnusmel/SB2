@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ListsComponent } from './lists.component';
 import { ListsRoutingModule } from './lists-routing.module';
 import { PageHeaderModule } from './../../shared';
+import { ListDataService } from './listdata.service';
 
 @NgModule({
     imports: [
@@ -11,6 +12,9 @@ import { PageHeaderModule } from './../../shared';
         ListsRoutingModule,
         PageHeaderModule
     ],
+
+	providers: [ListDataService],
+	
     declarations: [ListsComponent]
 })
 export class ListsModule { }

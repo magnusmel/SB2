@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { routerTransition } from '../../router.animations';
 
+import { ListDataService } from './listdata.service';
+
+
 @Component({
     selector: 'app-lists',
     templateUrl: './lists.component.html',
@@ -8,6 +11,17 @@ import { routerTransition } from '../../router.animations';
     animations: [routerTransition()]
 })
 export class ListsComponent implements OnInit {
-    constructor() { }
+
+
+	listData;
+	
+
+	constructor(service: ListDataService) {
+		this.listData = service.getListData();
+		
+
+
+	}
+
     ngOnInit() { }
 }
