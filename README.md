@@ -1,10 +1,13 @@
 # TMAIL Version 2.x - written in Angular4 and Bootstrap 4
 Simple Dashboard Admin App built using Angular 4 and Bootstrap 4
 
+#Version 2.0.5
+ - Added a service to return Campaign Data - Campaigns Page
+
 #Version 2.0.4
  - Updated Dashboard with Modal Panel
- - Use ngFor Loop and Arrays to fill in TimelineData - Campaigns Page
- - Added a service to return campaign data for TimeLine - Campaigns Page
+ - Use ngFor Loop and Arrays to fill in TimelineData - Dashboard Page
+ - Added a service to return campaign data for TimeLine - Dashboard Page
 
 
 #Version 2.0.3

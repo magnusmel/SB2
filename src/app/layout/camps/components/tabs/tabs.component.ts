@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CampaignPageDetailDataService } from './../../campaignpagedetaildata.service';
+
 
 @Component({
   selector: 'app-tabs',
@@ -7,7 +9,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TabsComponent implements OnInit {
 
-  constructor() { }
+	campSentData;
+	campDraftData;
+	campScheduledData;
+	campSuspendedData;
+	campRunningData;
+	campArchivedData;
+
+	constructor(service: CampaignPageDetailDataService) {
+		this.campSentData = service.getAllCampaignData();
+		this.campDraftData = service.getDraftCampaignData();
+		this.campScheduledData = service.getScheduledCampaignData();
+		this.campSuspendedData = service.getSuspendedCampaignData();
+		this.campRunningData = service.getRunningCampaignData();
+		this.campArchivedData = service.getArchivedCampaignData();
+
+
+
+	}
+
 
   ngOnInit() {
   }

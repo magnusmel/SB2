@@ -21,6 +21,7 @@ import {
     TimepickerComponent,
 } from './components';
 import { PageHeaderModule } from '../../shared';
+import { CampaignPageDetailDataService } from './campaignpagedetaildata.service';
 
 @NgModule({
     imports: [
@@ -31,6 +32,9 @@ import { PageHeaderModule } from '../../shared';
         PageHeaderModule,
         CampsRoutingModule,
     ],
+
+    providers: [CampaignPageDetailDataService],
+
     declarations: [
         CampsComponent,
         ButtonsComponent,
