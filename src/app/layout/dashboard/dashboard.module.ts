@@ -5,7 +5,7 @@ import {
     NgbAlertModule
 } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
@@ -13,7 +13,7 @@ import {
     TimelineComponent,
     NotificationComponent,
     ChatComponent,
-    ModalComponent
+    ButtonsComponent,
 } from './components';
 import { StatModule } from '../../shared';
 
@@ -23,7 +23,10 @@ import { CampaignDataService } from './campaigndata.service';
 @NgModule({
     imports: [
         CommonModule,
+        FormsModule,
+        ReactiveFormsModule,
         NgbCarouselModule.forRoot(),
+        NgbModule.forRoot(),
         NgbAlertModule.forRoot(),
         DashboardRoutingModule,
         StatModule,
@@ -33,10 +36,10 @@ import { CampaignDataService } from './campaigndata.service';
 
     declarations: [
         DashboardComponent,
-        ModalComponent,
         TimelineComponent,
         NotificationComponent,
-        ChatComponent
+        ChatComponent,
+        ButtonsComponent,
     ]
 })
 export class DashboardModule { }

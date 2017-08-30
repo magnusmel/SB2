@@ -6,6 +6,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // relative import
 import { CampsRoutingModule } from './camps-routing.module';
 import { CampsComponent } from './camps.component';
+import { CKEditorModule } from 'ng2-ckeditor';
+// Import Angular plugin.
+import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
+
 import {
     AlertComponent,
     ButtonsComponent,
@@ -19,6 +23,8 @@ import {
     TabsComponent,
     TooltipComponent,
     TimepickerComponent,
+
+
 } from './components';
 import { PageHeaderModule } from '../../shared';
 import { CampaignPageDetailDataService } from './campaignpagedetaildata.service';
@@ -28,9 +34,12 @@ import { CampaignPageDetailDataService } from './campaignpagedetaildata.service'
         CommonModule,
         FormsModule,
         ReactiveFormsModule,
+        CKEditorModule,
         NgbModule.forRoot(),
         PageHeaderModule,
         CampsRoutingModule,
+        FroalaEditorModule.forRoot(),
+        FroalaViewModule.forRoot(),
     ],
 
     providers: [CampaignPageDetailDataService],

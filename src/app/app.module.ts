@@ -12,6 +12,11 @@ import { AuthGuard } from './shared';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+// Import Angular plugin.
+import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
+
+import { CKEditorModule } from 'ng2-ckeditor';
+
 
 export const firebaseConfig = {
     apiKey: "AIzaSyAvVAniCCXMlbXqiHBXeOd_VfLka_qNIQQ",
@@ -41,6 +46,9 @@ export function HttpLoaderFactory(http: Http) {
         FormsModule,
         HttpModule,
         AppRoutingModule,
+        CKEditorModule,
+        FroalaEditorModule.forRoot(), 
+        FroalaViewModule.forRoot(),
         TranslateModule.forRoot({
             loader: {
                 provide: TranslateLoader,

@@ -5,6 +5,7 @@ import { TranslateModule, TranslateService, TranslateLoader } from '@ngx-transla
 
 import { AppComponent } from './app.component';
 
+
 describe('AppComponent', () => {
   let fixture: ComponentFixture<AppComponent>;
   let component: AppComponent;

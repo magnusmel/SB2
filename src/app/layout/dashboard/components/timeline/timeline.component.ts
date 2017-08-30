@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CampaignDataService } from './../../campaigndata.service';
 
+
+
 @Component({
   selector: 'app-timeline',
   templateUrl: './timeline.component.html',

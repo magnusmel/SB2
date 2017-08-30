@@ -1,8 +1,20 @@
 # TMAIL Version 2.x - written in Angular4 and Bootstrap 4
 Simple Dashboard Admin App built using Angular 4 and Bootstrap 4
 
+#Version 2.0.9
+ x - Show all activity details for a contact
+
+#Version 2.0.8
+ - Added Wsywig HTML editor
+
+  - Added froala editor
+x - Added tinymce editor 
+  - Added Ckeditor
+
+
 #Version 2.0.7
  - Added a service to return Contacts Data - Contacts Page
+
 
 #Version 2.0.6
  - Added a service to return List Data - List Page

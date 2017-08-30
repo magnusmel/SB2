@@ -7,5 +7,8 @@ import { routerTransition } from '../../router.animations';
 	styleUrls: ['./camps.component.scss'],
     animations: [routerTransition()]
 })
+
+
 export class CampsComponent {
+	
 }

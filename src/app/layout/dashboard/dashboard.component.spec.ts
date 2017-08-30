@@ -1,11 +1,14 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { NgbCarouselModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import {
   TimelineComponent,
   NotificationComponent,
   ChatComponent,
-  ModalComponent
+  ButtonsComponent
+
 } from './components';
 
 import { StatModule } from '../../shared';
@@ -18,16 +21,20 @@ describe('DashboardComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
     imports: [
+        FormsModule,
+        ReactiveFormsModule,
         NgbCarouselModule.forRoot(),
+        NgbModule.forRoot(),
         NgbAlertModule.forRoot(),
         StatModule,
     ],
       declarations: [
         DashboardComponent,
-        ModalComponent,
         TimelineComponent,
         NotificationComponent,
-        ChatComponent
+        ChatComponent,
+        ButtonsComponent,
+
       ]
     })
     .compileComponents();
