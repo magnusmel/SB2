@@ -25,6 +25,7 @@
         "@ng-bootstrap/ng-bootstrap": "^1.0.0-alpha.26",
         "@ngx-translate/core": "^7.0.0",
         "@ngx-translate/http-loader": "^0.1.0",
+        "angular-acl": "^0.1.10",
         "angular-froala-wysiwyg": "^1.0.0",
         "angularfire2": "^4.0.0-rc.2",
         "core-js": "^2.4.1",

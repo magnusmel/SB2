@@ -7,6 +7,9 @@ import {
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+// Added Translator Module i18n
+import { TranslateModule } from '@ngx-translate/core';
+
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
 import {
@@ -30,6 +33,7 @@ import { CampaignDataService } from './campaigndata.service';
         NgbAlertModule.forRoot(),
         DashboardRoutingModule,
         StatModule,
+        TranslateModule.forRoot(),
     ],
     
     providers: [CampaignDataService],

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { routerTransition } from '../../router.animations';
+import { TranslateService } from '@ngx-translate/core';
+import { CampaignDataService } from './campaigndata.service';
 
 @Component({
     selector: 'app-dashboard',
@@ -11,7 +13,22 @@ export class DashboardComponent implements OnInit {
     public alerts: Array<any> = [];
     public sliders: Array<any> = [];
 
-    constructor() {
+      countAllContacts;
+      countAllContactsBlackListed;
+      countAllCampaignsClicked;
+      countAllCampaignsOpened;
+
+
+
+    constructor(private translate: TranslateService , service: CampaignDataService   ) {
+
+
+        this.countAllContacts = service.getCountAllContacts();
+        this.countAllContactsBlackListed = service.getCountAllContactsBlackListed();
+        this.countAllCampaignsClicked = service.getCountAllCampaignsClicked();
+        this.countAllCampaignsOpened = service.getCountAllCampaignsOpened();
+
+
         this.sliders.push({
             imagePath: 'assets/images/slider1.jpg',
             label: 'First slide label',

@@ -2,6 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { NgbCarouselModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
 
 import {
   TimelineComponent,
@@ -23,6 +24,7 @@ describe('DashboardComponent', () => {
     imports: [
         FormsModule,
         ReactiveFormsModule,
+        TranslateModule.forRoot(),
         NgbCarouselModule.forRoot(),
         NgbModule.forRoot(),
         NgbAlertModule.forRoot(),

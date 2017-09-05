@@ -1,9 +1,32 @@
 # TMAIL Version 2.x - written in Angular4 and Bootstrap 4
 Simple Dashboard Admin App built using Angular 4 and Bootstrap 4
 
-#Version 2.0.9
- x - Show all activity details for a contact
+#Version 2.2.0
+ x - Added List & Contact Mgt with Firebase support
+ x - Added Login with ACL plus firebase
 
+
+
+#Version 2.1.0
+ x - Add Angular ACL service
+ x - Implement Roles at angular level
+	ACL Roles 
+ 	- Master Admin
+ 	  - Publisher
+ 	  - Editor
+ 	  - UserMgr
+
+
+#Version 2.0.9
+ x - Show a modal for  activity details for a contact
+ x - Show Preview Modal
+ x - Show Report Modal
+ x - Added create campaign button to Dashboard
+ x - Added language translation to all pages
+ - Added Preview Campaign & View Report buttons
+ - Added Dynamic Counts to Dashboard Service & Dashboard
+
+ 
 #Version 2.0.8
  - Added Wsywig HTML editor
 

@@ -27,6 +27,17 @@ export class TimelineComponent implements OnInit {
 			this.campData = service.getCampaignData();
   }
 
+
+  previewCampaign(id: string) : void {
+    console.log('Preview Campaign: ' + id);
+  }
+
+
+  viewReport(id: string) : void {
+    console.log('View Report: ' + id);
+  }
+
+
   ngOnInit() {
   }
 

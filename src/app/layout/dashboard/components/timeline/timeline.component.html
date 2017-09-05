@@ -50,11 +50,11 @@
 
 
 
-                                            <button type="button" class="btn btn-primary btn-sm" > Preview
+                                            <button type="button" class="btn btn-primary btn-sm" (click)="previewCampaign(camp.id)" > Preview
                                                 <i class="fa fa-eye"></i>  <span class="caret"></span>
                                             </button>
 
-                                            <button type="button" class="btn btn-danger btn-sm" style="margin-left: 10px" > Report
+                                            <button type="button" class="btn btn-danger btn-sm" style="margin-left: 10px" (click)="viewReport(camp.id)"> Report
                                                 <i class="fa fa-bar-chart"></i>  <span class="caret"></span>
                                             </button>
                                         </div>
