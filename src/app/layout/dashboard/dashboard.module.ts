@@ -17,7 +17,9 @@ import {
     NotificationComponent,
     ChatComponent,
     ButtonsComponent,
+    ModalComponent,
 } from './components';
+
 import { StatModule } from '../../shared';
 
 import { CampaignDataService } from './campaigndata.service';
@@ -44,6 +46,7 @@ import { CampaignDataService } from './campaigndata.service';
         NotificationComponent,
         ChatComponent,
         ButtonsComponent,
+        ModalComponent,
     ]
 })
 export class DashboardModule { }

@@ -18,9 +18,7 @@ export class DashboardComponent implements OnInit {
       countAllCampaignsClicked;
       countAllCampaignsOpened;
 
-
-
-    constructor(private translate: TranslateService , service: CampaignDataService   ) {
+    constructor( private translate: TranslateService , service: CampaignDataService ) {
 
 
         this.countAllContacts = service.getCountAllContacts();

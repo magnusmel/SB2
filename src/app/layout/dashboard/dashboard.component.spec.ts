@@ -8,7 +8,8 @@ import {
   TimelineComponent,
   NotificationComponent,
   ChatComponent,
-  ButtonsComponent
+  ButtonsComponent,
+  ModalComponent,
 
 } from './components';
 
@@ -36,7 +37,7 @@ describe('DashboardComponent', () => {
         NotificationComponent,
         ChatComponent,
         ButtonsComponent,
-
+        ModalComponent,
       ]
     })
     .compileComponents();

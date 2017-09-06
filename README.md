@@ -15,16 +15,16 @@ Simple Dashboard Admin App built using Angular 4 and Bootstrap 4
  	  - Publisher
  	  - Editor
  	  - UserMgr
-
+x - Added language translation to all pages
+ 
 
 #Version 2.0.9
  x - Show a modal for  activity details for a contact
- x - Show Preview Modal
- x - Show Report Modal
+  - Show Preview Modal
+  - Show Report Modal
  x - Added create campaign button to Dashboard
- x - Added language translation to all pages
- - Added Preview Campaign & View Report buttons
- - Added Dynamic Counts to Dashboard Service & Dashboard
+   - Added Preview Campaign & View Report buttons
+   - Added Dynamic Counts to Dashboard Service & Dashboard
 
  
 #Version 2.0.8
