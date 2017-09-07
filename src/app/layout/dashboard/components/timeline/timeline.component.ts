@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { CampaignDataService } from './../../campaigndata.service';
 
 
@@ -10,7 +10,8 @@ import { CampaignDataService } from './../../campaigndata.service';
 })
 export class TimelineComponent implements OnInit {
 
-
+ 
+  // campId: string;
 // type MyArrayType = Array<{ id: number, text: string }>;
 
 // var arr: MyArrayType = [
@@ -25,6 +26,7 @@ export class TimelineComponent implements OnInit {
 
   	constructor(service: CampaignDataService) { 
 			this.campData = service.getCampaignData();
+      // this.campid = '';
   }
 
 

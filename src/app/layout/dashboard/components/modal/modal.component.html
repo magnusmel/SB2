@@ -13,15 +13,32 @@
 
                 <ng-template #content let-c="close" let-d="dismiss">
                     <div class="modal-header">
-                        <h4 class="modal-title">Preview Mailer</h4>
+                        <h4 class="modal-title">Preview Mailer {{campId}}</h4>
+
+
+
                         <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <p>One fine body&hellip;</p>
-                        <P> LOREM IPSUM </P>
+                          <div class="mark-preview-desktop reseller-desktop-preview">
+                                <div class="browserHeader"> <span class="browserIcon"></span> 
+                                    <span class="browserIcon"></span> <span class="browserIcon"></span> </div>
+                                
+                                   <header id="mark-preview-archive-header">
+                                
+                                  <div class="previewInfo">
+                                    <div class="snb-para"> <strong>From : </strong> TiE Chapter - Bangalore &lt;connect@tiebangalore.org&gt; </div>
+                                    <div class="snb-para"> <strong>Reply : </strong> connect@tiebangalore.org </div>
+                                    <div class="snb-para"> <strong>Subject : </strong> IoT Meetups This Week: Open House with Intel; Meetup on IoT Security </div>
+                                  </div>
+                                </header>
+                                <iframe src="https://s3-ap-southeast-1.amazonaws.com/imboss/sampletestmailer.html" frameborder="1"></iframe>
+                              </div>
+                          
                     </div>
+
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" (click)="c('Close click')">Close</button>
                     </div>
@@ -30,7 +47,7 @@
 
                  <ng-template #reportcontent let-c="close" let-d="dismiss">
                     <div class="modal-header">
-                        <h4 class="modal-title">View Report</h4>
+                        <h4 class="modal-title">View Report {{campId}}</h4>
                         <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
                             <span aria-hidden="true">&times;</span>
                         </button>

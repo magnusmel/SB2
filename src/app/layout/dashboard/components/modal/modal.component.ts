@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -8,7 +8,12 @@ import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 })
 export class ModalComponent {
     closeResult: string;
-    constructor(private modalService: NgbModal) { }
+    @Input() campId: string;
+
+    constructor(private modalService: NgbModal) { 
+        // this.campid = '';
+    
+    }
 
     open(content) {
         this.modalService.open(content).result.then((result) => {
