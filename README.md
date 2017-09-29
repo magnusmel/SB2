@@ -5,9 +5,7 @@ Simple Dashboard Admin App built using Angular 4 and Bootstrap 4
  x - Added List & Contact Mgt with Firebase support
  x - Added Login with ACL plus firebase
 
-
-
-#Version 2.1.0
+#Version 2.1.2
  x - Add Angular ACL service
  x - Implement Roles at angular level
 	ACL Roles 
@@ -18,6 +16,13 @@ Simple Dashboard Admin App built using Angular 4 and Bootstrap 4
 x - Added language translation to all pages
 x - Added create campaign button to Campaigns 
 x - Show a modal for  activity details for a contact
+
+#Version 2.1.0
+
+  - Add Sponsors Menu
+  - Add Billings Menu	
+  - Added modal-iframe class to _modal.scss in styles/bootstrap
+
 
 #Version 2.0.9
    - Show Preview Modal

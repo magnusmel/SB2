@@ -68,7 +68,6 @@
   left: 0;
   z-index: $zindex-modal-backdrop;
   background-color: $modal-backdrop-bg;
-
   // Fade for backdrop
   &.fade { opacity: 0; }
   &.show { opacity: $modal-backdrop-opacity; }
@@ -117,8 +116,8 @@
 .modal-scrollbar-measure {
   position: absolute;
   top: -9999px;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   overflow: scroll;
 }
 
@@ -126,12 +125,20 @@
 @include media-breakpoint-up(sm) {
   // Automatically set modal's width for larger viewports
   .modal-dialog {
-    max-width: $modal-md;
+    max-width: $modal-lg;
     margin: $modal-dialog-sm-up-margin-y auto;
   }
 
   .modal-content {
     @include box-shadow($modal-content-sm-up-box-shadow);
+  }
+
+  .modal-iframe {
+      
+      width: $modal-lg - 25 ;
+      height: 500px;
+      //overflow: auto;
+      margin: $modal-dialog-sm-up-margin-y auto;
   }
 
   .modal-sm { max-width: $modal-sm; }

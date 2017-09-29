@@ -29,7 +29,6 @@ import {
 import { PageHeaderModule } from '../../shared';
 import { CampaignPageDetailDataService } from './campaignpagedetaildata.service';
 
-
 @NgModule({
     imports: [
         CommonModule,

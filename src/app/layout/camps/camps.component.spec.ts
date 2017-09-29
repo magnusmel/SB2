@@ -19,6 +19,7 @@ import {
     TimepickerComponent,
 } from './components';
 import { PageHeaderModule } from '../../shared';
+import { TranslateModule } from '@ngx-translate/core';
 
 describe('CampsComponent', () => {
   let component: CampsComponent;
@@ -30,6 +31,7 @@ describe('CampsComponent', () => {
         RouterTestingModule,
         FormsModule,
         ReactiveFormsModule,
+        TranslateModule.forRoot(),
         NgbModule.forRoot(),
         PageHeaderModule
       ],
