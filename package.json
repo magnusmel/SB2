@@ -31,7 +31,7 @@
         "core-js": "^2.4.1",
         "firebase": "^4.3.0",
         "font-awesome": "^4.7.0",
-        "froala-editor": "^2.6.5",
+        "froala-editor": "^4.0.7",
         "ng-ckeditor": "^2.0.3",
         "ng2-charts": "^1.6.0",
         "ng2-ckeditor": "^1.1.9",
